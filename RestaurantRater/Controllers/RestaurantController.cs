@@ -67,6 +67,11 @@ namespace RestaurantRater.Controllers
         }
 
         // GET: Restaurant/Edit/{id}
+        // Get an id from the user
+        // Handle if the id is null
+        // Find a Restaurant by that id
+        // If the restaurant doesn't exist
+        // Return the restaurant and the view
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -81,7 +86,7 @@ namespace RestaurantRater.Controllers
             return View(restaurant);
         }
 
-        // Post: Restaurant/Edit/{id}
+        // POST: Restaurant/Edit/{id}
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Restaurant restaurant)
