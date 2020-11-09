@@ -8,7 +8,7 @@ namespace RestaurantRater.Controllers
 {
     public class RestaurantController : Controller
     {
-        // GET: Restaurant
+        // GET: Restaurant/Index
         public ActionResult Index()
         {
             return View();
